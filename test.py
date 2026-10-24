@@ -67,11 +67,11 @@ if __name__ == '__main__':
     with open('Coffe_sales.csv') as coffe_csv:
         # print(*slice_file(coffe_csv, st, en), sep='\n')
 
-        # result = slice_file(coffe_csv, st, en)
-        # for line in result:
-        #     print(' | '.join(line))
+        result = slice_file(coffe_csv, st, en)
+        for line in result:
+            print(' | '.join(line))
 
         # print(find_popular(coffe_csv))
         # print(find_popular2(coffe_csv))
 
-        print(compute_month_income(coffe_csv, input()))
+        # print(compute_month_income(coffe_csv, input()))
