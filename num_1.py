@@ -64,6 +64,6 @@ def generate_library_links(csv_file, count):
 
 
 with open('books.csv') as books_csv:
-    find_name_with_lenght(books_csv, 30)
+    # find_name_with_lenght(books_csv, 30)
     # search_by_name(books_csv)
-    # generate_library_links(books_csv, 20)
+    generate_library_links(books_csv, 20)

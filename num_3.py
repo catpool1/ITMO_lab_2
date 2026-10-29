@@ -1,12 +1,9 @@
 import csv
 
-
 def get_tags(csv_file):
     csv_file.seek(0)
     reader = csv.DictReader(csv_file, delimiter=';')
-
     tags = set()
-
     for line in reader:
         for tag in line['Жанр книги'].split('#'):
             tags.add(tag)
